@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+  <body>
+    <div id="header">
+    <div class="container">
+    <!-- nav refers to navigation bar for navigation of website from top of webpage -->
+
+      <nav>  
+        <img src="images/mylogo.png" class="logo" alt="logo_soumadeep" />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li> 
+           <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+      </nav>
+    <div class="header-text">
+        <p> Web Developer</p>
+        <h1>Hi, I'm <span1>Soumadeep</span1> <br> <span2>From</span2><span3> West Bengal, Kolkata</span3></h1>
+    </div> 
+    
+</div>    <!--Container div ending-->
+</div>     <!--header div ending-->
+
+
+<!---------------------------------about---------------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="Soumadeep">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><br><br>I'm <strong id="name">Soumadeep Putatunda</strong>, a 4<sup>th</sup> year B.Tech student in <super id="dept">Electronics and Communication Engineering</super> at <a href="https://www.ticollege.ac.in" target="blank" id="linkUniv">Techno Main Salt Lake</a>, Kolkata.<br><br> I am passionate about Web Development.<br>Skilled in HTML,CSS, JS.<br>Currently learning React and Focusing on DSA. <br><br></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C, C++, JavaScript,Python.</li>
+                        <li><span>Web Development</span><br>HTML, CSS, JavaScript, React (learning)</li>
+                        <li><span>IoT & Embedded Systems</span><br>ESP32, Sensors, Cloud Integration (ThingSpeak)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                       
+                        <li><span>2022 - </span><br>Class Representative - ECE - Techno Main Salt Lake</li>
+                        <li><span>2023 -</span><br>Anti-Ragging Committee Member- Techno Main Salt Lake</li>
+                        <li><span>2023 September</span><br>Marketing Staff - Design Value (Edtech Startup)</li>
+                        <li><span>2025 April-May</span><br> Convenor -ECE- Departmental Farewell </li>
+                        <li><span>2024 -</span><br>IET-TMSL Student Chapter - PR HEAD </li>
+                        <li><span>2024-2025</span><br>GDG TMSL - Web Dev Team Member</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>B.Tech in ECE - Techno Main Salt Lake (Current CGPA: 7.72) upto 6th Semester.</li>
+                        <li><span>2021</span><br>12th - Swami Pranabananda Vidyapith (91%)</li>
+                        <li><span>2019</span><br>10th - Swami Pranabananda Vidyapith (81%)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------ services or projects -------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Few Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Built a Rock-Paper-Scissors Game hosted on GitHub Pages.</p>
+                <a href="https://soumadeep19.github.io/Rock-Paper-and-Scissors-Game/" target="_blank">Visit Project</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>IoT Projects</h2>
+                <p>Developed an automatic solar tracker using LDRs and ESP32 with real-time cloud monitoring.</p>
+                <a href="https://solar-tracker-sih-2024.vercel.app/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------portfolio------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Department Website</h3>
+                    <p>Created a website to showcase faculty, projects, and activities of our ECE department.<br> (WORK IN PROGRESS)</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>IoT Solar Tracker</h3>
+                    <p>ESP32-based IoT project that tracks solar energy and displays data on LCD & ThingSpeak.</p>
+                    <a href="https://solar-tracker-sih-2024.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Rock-Paper-Scissors Game</h3>
+                    <p>A fun browser-based JavaScript game with a background video and responsive UI.</p>
+                    <a href="https://soumadeep19.github.io/Rock-Paper-and-Scissors-Game/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ---------------------contact------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>soumadeepputatunda@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9433174074</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mrsoumo" target="_blank"><i class="fa-brands fa-linkedin">linkedin </i></a>
+                    <a href="https://github.com/Soumadeep19" target="_blank"> <i class="fa-brands fa-github"> github </i></a>
+                </div>
+                <a href="images/Soumadeep_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Soumadeep Putatunda</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="script.js"></script>
+<script>
+  var tabLinks = document.getElementsByClassName("tab-links");
+  var tabContents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabName) {
+    for (var i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].classList.remove("active-link");
+    }
+    for (var i = 0; i < tabContents.length; i++) {
+      tabContents[i].classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+  }
+</script>
+</body>
+</html>
+
